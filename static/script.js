@@ -24,6 +24,7 @@ navItem.forEach(item => {
     })
 })
 
+//Animação
 const item = document.querySelectorAll("[data-anime]");
 const animeScroll = () => {
     const windowTop = window.pageYOffset + window.innerHeight *0.85;
@@ -42,3 +43,19 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
     animeScroll();
 })
+
+//Ativar botao carregamento
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", ()=>{
+    btnEnviarLoader.style.display ="block";
+    btnEnviar.style.display ="none";
+})
+
+//tirar mensagem depois de 5 segundos
+
+setTimeout(() =>{
+    document.querySelector('#alerta').style.display = 'none';
+}, 3000)
