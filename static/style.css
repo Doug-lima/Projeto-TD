@@ -178,7 +178,7 @@ section#inicio span#subtitle{
 }
 
 *::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
 }
 
 *::-webkit-scrollbar-track{
@@ -244,7 +244,7 @@ section#inicio span#subtitle{
 }
 
 .carousel-control-prev{
-    margin-right: -1rem;
+    margin-right: -0.6rem;
     position: absolute;
     background-color: #fff;
     width: 40px;
